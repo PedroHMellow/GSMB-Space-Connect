@@ -12,7 +12,7 @@ export default function LoginCard() {
   };
 
   return (
-    <View className="flex-1 bg-background justify-center items-center p-4">
+    <View className="flex-1 justify-center items-center p-4">
       {/* Card Principal */}
       <View className="w-11/12 max-w-xs bg-white rounded-[16px] p-5 shadow-md">
         

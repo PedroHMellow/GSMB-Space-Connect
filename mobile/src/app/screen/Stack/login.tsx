@@ -1,14 +1,40 @@
-import { View, Text } from "react-native"; 
+import { View, Text, ImageBackground, Image } from "react-native"; 
 import LoginCard from "../../../components/loginCard";
+import Bglogin from "../../../assets/images/bg-login.png";
+import Logoapp from "../../../assets/images/logo-app.png";
+
 
 export default function Login() {
   return (
-    <View className="flex-1  bg-background">
-      <Text className="text-5xl text-primary">Aqui é login</Text>
+    <ImageBackground 
+      source={Bglogin} 
+      className="flex-1 px-6 pt-16 pb-8 justify-between"
+      resizeMode="cover"
+      blurRadius={3} 
+      >
+      <View className="absolute inset-0 bg-white/45" />
       
+      <View className="items-center mt-6 z-10">
+       
+        <Image 
+          source={Logoapp} 
+          className="w-24 h-24 rounded-2xl mb-4 shadow-sm"
+          resizeMode="contain"
+        />
       
-        <LoginCard />
+      <Text className="font-inter text-3xl text-black mb-12 text-center">
+        Nome do APP
+      </Text>
       
+      <Text className="font-inter text-base text-neutral-700  text-center">
+          Seu parceiro inteligente no campo.
+      </Text>
+
     </View>
+
+      <LoginCard />
+
+      
+    </ImageBackground>
   );
 }
