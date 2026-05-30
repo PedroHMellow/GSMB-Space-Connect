@@ -16,16 +16,16 @@ export default function LoginCard() {
       {/* Card Principal */}
       <View className="w-11/12 max-w-xs bg-white rounded-[16px] p-5 shadow-md">
         
-        {/* Campo: Nome do Produtor */}
+        {/* Campo: Email */}
         <View className="mb-4">
           <Text className="font-inter text-neutral-700 text-sm font-semibold mb-2">
-            Nome do Produtor
+            Email 
           </Text>
           <View className="flex-row items-center border border-neutral-200 rounded-lg px-3 h-12 bg-white">
             <Feather name="user" size={18} color="#9ca3af" style={{ marginRight: 10 }} />
             <TextInput
               className="flex-1 font-inter text-base text-neutral-800"
-              placeholder="Ex: João Silva"
+              placeholder="Ex: joao.silva@example.com"
               placeholderTextColor="#9ca3af"
               value={producerName}
               onChangeText={setProducerName}
@@ -62,6 +62,19 @@ export default function LoginCard() {
             Entrar
           </Text>
           <Feather name="arrow-right" size={18} color="white" />
+        </TouchableOpacity>
+        
+        {/* Criar Conta */}
+         <TouchableOpacity
+          activeOpacity={0.7}
+          className="mt-5 items-center"
+        >
+          <Text className="font-inter text-neutral-500 text-sm">
+            Ainda não possui conta?{" "}
+            <Text className="text-primary font-semibold">
+              Criar conta
+            </Text>
+          </Text>
         </TouchableOpacity>
 
       </View>
