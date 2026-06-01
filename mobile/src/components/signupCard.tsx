@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 
 export default function SignUpCard() {
 	const [fullName, setFullName] = useState('');
 	const [emailOrPhone, setEmailOrPhone] = useState('');
 	const [password, setPassword] = useState('');
+	const router = useRouter();
 
 	const handleCreateAccount = () => {
 		console.log('Criar conta:', { fullName, emailOrPhone, password });
@@ -73,6 +75,7 @@ export default function SignUpCard() {
 			<TouchableOpacity
 				activeOpacity={0.7}
 				className="mt-5 items-center"
+				onPress={() => router.push("/screen/Stack/login")}
 			>
 				<Text className="font-inter text-neutral-500 text-sm">
 					Já tem uma conta?{" "}

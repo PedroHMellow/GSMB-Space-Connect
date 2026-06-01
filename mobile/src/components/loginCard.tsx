@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
 import { Feather } from '@expo/vector-icons'; 
+import { useRouter } from 'expo-router';
 
 export default function LoginCard() {
   const [producerName, setProducerName] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
   const handleLogin = () => {
     // Lógica de autenticação aqui
@@ -68,6 +70,7 @@ export default function LoginCard() {
          <TouchableOpacity
           activeOpacity={0.7}
           className="mt-5 items-center"
+          onPress={() => router.push("/screen/Stack/signup")}
         >
           <Text className="font-inter text-neutral-500 text-sm">
             Ainda não possui conta?{" "}
