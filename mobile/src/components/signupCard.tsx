@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function SignUpCard() {
 	const [fullName, setFullName] = useState('');
@@ -9,8 +10,33 @@ export default function SignUpCard() {
 	const [password, setPassword] = useState('');
 	const router = useRouter();
 
-	const handleCreateAccount = () => {
-		console.log('Criar conta:', { fullName, emailOrPhone, password });
+	const handleCreateAccount = async () => {
+		if (!fullName || !emailOrPhone || !password) {
+			Alert.alert('Erro', 'Campos obrigatórios não preenchidos.');
+			return;
+		}
+
+		try {
+			const storedUsers = await AsyncStorage.getItem('@users');
+			const users = storedUsers ? JSON.parse(storedUsers) : [];
+
+			const userExists = users.some((u: any) => u.emailOrPhone === emailOrPhone);
+
+			if (userExists) {
+				Alert.alert('Erro', 'Conta já cadastrada.');
+				return;
+			}
+
+			const newUser = { fullName, emailOrPhone, password };
+			users.push(newUser);
+
+			await AsyncStorage.setItem('@users', JSON.stringify(users));
+			
+			Alert.alert('Sucesso', 'Conta criada com sucesso!');
+			router.replace('/screen/Tabs/home');
+		} catch (error) {
+			Alert.alert('Erro', 'Ocorreu um erro ao salvar sua conta.');
+		}
 	};
 
 	return (

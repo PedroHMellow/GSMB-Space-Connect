@@ -1,16 +1,42 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, SafeAreaView, Alert } from 'react-native';
 import { Feather } from '@expo/vector-icons'; 
 import { useRouter } from 'expo-router';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function LoginCard() {
   const [producerName, setProducerName] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
 
-  const handleLogin = () => {
-    // Lógica de autenticação aqui
-    console.log('Login:', { producerName, password });
+  const handleLogin = async () => {
+    if (!producerName || !password) {
+      Alert.alert('Erro', 'Campos obrigatórios não preenchidos.');
+      return;
+    }
+
+    try {
+      const storedUsers = await AsyncStorage.getItem('@users');
+      const users = storedUsers ? JSON.parse(storedUsers) : [];
+
+      // Procura o usuário pelo email (armazenado em producerName neste componente)
+      const user = users.find((u: any) => u.emailOrPhone === producerName);
+
+      if (!user) {
+        Alert.alert('Erro', 'Usuário não encontrado.');
+        return;
+      }
+
+      if (user.password !== password) {
+        Alert.alert('Erro', 'Senha incorreta.');
+        return;
+      }
+
+      // Redireciona para a Home usando replace para evitar voltar ao login
+      router.replace('/screen/Tabs/home');
+    } catch (error) {
+      Alert.alert('Erro', 'Ocorreu um erro ao tentar entrar. Tente novamente.');
+    }
   };
 
   return (
@@ -31,7 +57,8 @@ export default function LoginCard() {
               placeholderTextColor="#9ca3af"
               value={producerName}
               onChangeText={setProducerName}
-              autoCapitalize="words"
+              keyboardType="email-address"
+              autoCapitalize="none"
             />
           </View>
         </View>
