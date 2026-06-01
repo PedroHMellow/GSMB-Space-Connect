@@ -69,6 +69,19 @@ export default function SignUpCard() {
 				<Feather name="arrow-right" size={18} color="white" />
 			</TouchableOpacity>
 
+			 {/* Já tem uma conta? */}
+			<TouchableOpacity
+				activeOpacity={0.7}
+				className="mt-5 items-center"
+			>
+				<Text className="font-inter text-neutral-500 text-sm">
+					Já tem uma conta?{" "}
+				<Text className="text-primary font-semibold">
+					Entrar
+				</Text>
+				</Text>
+			</TouchableOpacity>
+
 		</View>
 	);
 }
