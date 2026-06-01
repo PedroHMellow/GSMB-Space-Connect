@@ -32,7 +32,7 @@ export default function LoginCard() {
         return;
       }
 
-      // Redireciona para a Home usando replace para evitar voltar ao login
+    
       router.replace('/screen/Tabs/home');
     } catch (error) {
       Alert.alert('Erro', 'Ocorreu um erro ao tentar entrar. Tente novamente.');

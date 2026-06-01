@@ -91,9 +91,22 @@ export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        headerShown: false,
+        headerShown: true, 
+        headerTitle: "AgroShield", 
+        headerTitleAlign: "center", 
+        headerShadowVisible: false, 
+        headerStyle: {
+          backgroundColor: "#F5F5F5", 
+          height: 60,
+        },
+        headerTitleStyle: {
+          fontFamily: "Inter",
+          fontSize: 20,
+          fontWeight: "700", 
+          color: "#14532d", 
+        },
 
-        // Remove labels padrão
+        
         tabBarShowLabel: false,
 
         tabBarStyle: {

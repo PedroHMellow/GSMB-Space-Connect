@@ -41,7 +41,7 @@ export default function Login() {
               />
 
               <Text className="font-inter text-3xl text-black mb-12 text-center">
-                Nome do APP
+                AgroShield
               </Text>
 
               <Text className="font-inter text-base text-neutral-700 text-center">

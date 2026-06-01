@@ -39,7 +39,7 @@ export default function Signup() {
               />
 
               <Text className="font-inter text-3xl text-black text-center">
-                Nome do APP
+                AgroShield
               </Text>
 
               <Text className="font-inter text-base text-neutral-700 mt-4 text-center">
