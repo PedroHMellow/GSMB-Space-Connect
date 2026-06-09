@@ -30,7 +30,7 @@
       "favicon": "./src/assets/images/favicon.png"
     },
     "extra": {
-      "API_HOST": "192.168.0.225"
+      "API_HOST": "192.168.x.x"
     },
     "plugins": [
       "expo-router"
