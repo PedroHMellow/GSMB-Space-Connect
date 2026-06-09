@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgroSat.AlertEngine.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16a8a4143261311ff39e1f1b10f59b34b5a778e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f9681f3c87c678970655ba4193378ac19e6922d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgroSat.AlertEngine.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgroSat.AlertEngine.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj": {}
+    "C:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj": {
+    "C:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj",
+        "projectUniqueName": "C:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj",
         "projectName": "AgroSat.AlertEngine.Api",
-        "projectPath": "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj",
+        "projectPath": "C:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj",
         "packagesPath": "C:\\Users\\israe\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\obj\\",
+        "outputPath": "C:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\israe\\AppData\\Roaming\\NuGet\\NuGet.Config"
