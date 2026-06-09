@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, SafeAreaView, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
 import { Feather } from '@expo/vector-icons'; 
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -32,8 +32,7 @@ export default function LoginCard() {
         return;
       }
 
-    
-      router.replace('/screen/Tabs/home');
+      router.replace('/screen/Stack/farmInfo');
     } catch (error) {
       Alert.alert('Erro', 'Ocorreu um erro ao tentar entrar. Tente novamente.');
     }

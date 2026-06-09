@@ -138,6 +138,21 @@ export default function TabsLayout() {
         }}
       />
 
+      {/* MONITORAMENTO */}
+      <Tabs.Screen
+        name="monitoramento"
+        options={{
+          title: "Monitoramento",
+          tabBarIcon: ({ focused }) => (
+            <TabIcon
+              focused={focused}
+              icon="bar-chart-2"
+              label="Status"
+            />
+          ),
+        }}
+      />
+
       {/* PERFIL */}
       <Tabs.Screen
         name="perfil"

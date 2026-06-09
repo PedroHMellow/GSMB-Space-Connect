@@ -33,7 +33,7 @@ export default function SignUpCard() {
 			await AsyncStorage.setItem('@users', JSON.stringify(users));
 			
 			Alert.alert('Sucesso', 'Conta criada com sucesso!');
-			router.replace('/screen/Tabs/home');
+			router.replace('/screen/Stack/farmInfo');
 		} catch (error) {
 			Alert.alert('Erro', 'Ocorreu um erro ao salvar sua conta.');
 		}

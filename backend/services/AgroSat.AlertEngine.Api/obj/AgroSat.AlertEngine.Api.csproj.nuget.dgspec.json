@@ -1,31 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guuii\\Desktop\\java-gs\\pre projeto\\demo\\GS-2026-SEGUNDO-SEMESTRE\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj": {}
+    "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guuii\\Desktop\\java-gs\\pre projeto\\demo\\GS-2026-SEGUNDO-SEMESTRE\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj": {
+    "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guuii\\Desktop\\java-gs\\pre projeto\\demo\\GS-2026-SEGUNDO-SEMESTRE\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj",
+        "projectUniqueName": "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj",
         "projectName": "AgroSat.AlertEngine.Api",
-        "projectPath": "C:\\Users\\guuii\\Desktop\\java-gs\\pre projeto\\demo\\GS-2026-SEGUNDO-SEMESTRE\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj",
-        "packagesPath": "C:\\Users\\guuii\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guuii\\Desktop\\java-gs\\pre projeto\\demo\\GS-2026-SEGUNDO-SEMESTRE\\services\\AgroSat.AlertEngine.Api\\obj\\",
+        "projectPath": "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\AgroSat.AlertEngine.Api.csproj",
+        "packagesPath": "C:\\Users\\israe\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\israe\\Downloads\\FIAP\\3 Ano\\MB GS\\Nova pasta (6)\\GSMB-Space-Connect\\backend\\services\\AgroSat.AlertEngine.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guuii\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\israe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -40,10 +39,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -53,6 +53,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[8.0.10, )"
             },
@@ -90,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
